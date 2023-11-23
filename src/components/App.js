@@ -14,16 +14,16 @@ const App = () => {
         console.log(memodata)
     }
    return (
-    <div>
+    <div id='main'>
         <h1>React.useMemo</h1>
         <div className='todo'>
          <p>{todo}</p>
-        <button id='addTodo' onClick={()=>setTodo('New Todo')}>Add Todo</button>
+        <button id='add-todo-btn' onClick={()=>setTodo('New Todo')}>Add Todo</button>
         </div>
         <hr></hr>
         <div className='countnum'>
          <label>`count:${cnt}`</label>
-         <button onClick={()=> setCnt(cnt+1)}>+</button>
+         <button id='incr-cnt' onClick={()=> setCnt(cnt+1)}>+</button>
          <h2>Expensive Calculation</h2>
          <p>1000000000</p>
         </div>
@@ -31,7 +31,7 @@ const App = () => {
         <hr></hr>
        <div className='memo'>
        <input id='memo-key'/>
-       <button onClick={handleClick}> Add Skill</button>
+       <button id='skill-input' onClick={handleClick}> Add Skill</button>
      
         
       
